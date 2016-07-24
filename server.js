@@ -4,6 +4,11 @@ var port = process.env.port || 1337
 
 app.get('/', function (req, res) {
     res.send('Hello World!');
+    res.write('<p>Hello from Azure </p>');
+res.write('<ul>');
+res.write('<li><label>bing_key:</label>'+ process.env.bing_key +' </li>');
+res.write('<li><label>google_key:</label>'+ process.env.google_key +' </li>');
+res.write('</ul>');
 });
 
 var server = app.listen(port, function () {
