@@ -3,7 +3,7 @@ var app = express();
 var port = process.env.port || 1337
 
 app.get('/', function (req, res) {
-    res.send('Hello');
+    res.send('Hello ' + pro.env.WEBSITE_NODE_DEFAULT_VERSION );
     
 });
 
