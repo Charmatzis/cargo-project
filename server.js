@@ -1,9 +1,12 @@
 ﻿var express = require('express');
 var app = express();
 var port = process.env.port || 1337
+var path = require('path');
 
 app.get('/', function (req, res) {
-    res.send('Hello ' + process.env.bing_key );
+    //res.send('Hello ' + process.env.bing_key );
+    res.sendFile(path.join(__dirname + '/example/index.html'));
+
     
 });
 
