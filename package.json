@@ -1,0 +1,19 @@
+{
+  "name": "cargo-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is a node.js app using react-leaflet",
+  "main": "server.js",
+  "author": {
+    "name": "Christos Charmatzis",
+    "email": "xr_xarmatzis@outlook.com"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-zip": "^3.0.2",
+    "minimist": "^1.2.0"
+  }
+}
