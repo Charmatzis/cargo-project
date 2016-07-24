@@ -27,22 +27,7 @@ export default class MapView extends React.Component {
             <BaseLayer checked name='OpenStreetMap'>
               <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'/>
-            </BaseLayer>
-            <BaseLayer  name='Bing Maps Satellite'>
-              <BingLayer  bingkey={bing_key} />
-            </BaseLayer>
-            <BaseLayer  name='Bing Maps Satellite with Labels'>
-              <BingLayer  bingkey={bing_key} type="AerialWithLabels" />
-            </BaseLayer>
-            <BaseLayer  name='Google Maps Satellite'>
-              <GoogleLayer googlekey={google_key}  type='SATELLITE'/>
-            </BaseLayer>
-            <BaseLayer  name='Google Maps Hybrid'>
-              <GoogleLayer googlekey={google_key} type='HYBRID'/>
-            </BaseLayer>
-            <BaseLayer name='Landscape'>
-              <TileLayer url='http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png'/>
-            </BaseLayer>          
+            </BaseLayer>                 
           </LayersControl>
           <CoordinatesComponent position='bottomleft' decimals={6} decimalSeperator=',' useDMS={false}/>        
         </Map>
