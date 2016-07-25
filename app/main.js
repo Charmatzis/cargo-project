@@ -1,5 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App.js';
+import { render } from 'react-dom';
+import MapView from "./MapView";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+
+const example = (
+  <div id="main">
+    <h1>Cargo Project</h1>
+    <MapView />    
+  </div>
+)
+
+render(example, document.getElementById('app'));
