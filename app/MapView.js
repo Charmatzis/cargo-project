@@ -7,6 +7,8 @@ import {GoogleLayer} from 'react-leaflet-google'
 const { BaseLayer, Overlay } = LayersControl;
 const position = [59, -104];
 const zoom = 3;
+const bing_key = process.env.bing_key;
+const google_key= process.env.google_key;
 
 
 export default class MapView extends React.Component {
