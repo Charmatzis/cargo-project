@@ -9,8 +9,7 @@ const config = require('./webpack.config.js');
 
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
-console.log("Developing: " + isDeveloping); 
-const port = isDeveloping ? 1337 : process.env.port;
+const port =  process.env.port;
 //var port = process.env.port || 1337
 const app = express();
 
