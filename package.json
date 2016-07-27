@@ -1,26 +1,22 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "cargo-project",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "A web app in node",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
+    "url": "https://github.com/Charmatzis/cargo-project.git"
   },
   "engines": {
-    "node": "5.11.0 || 5.x"
+    "node": "5.11.0"
   },
-  "keywords": [
-    "express",
-    "webpack",
-    "node"
-  ],
-  "author": "Christian Alfoni",
+  "keywords": ["react-leaflet", "leaflet"],
+  "author": "Christos Charmatzis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
+    "url": "https://github.com/Charmatzis/cargo-project/issues"
   },
-  "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
+  "homepage": "https://github.com/Charmatzis/cargo-project",
   "scripts": {
     "clean": "rm -rf node_modules",
     "test": "",
