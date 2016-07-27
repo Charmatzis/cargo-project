@@ -22,7 +22,7 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
-    new ExtractTextPlugin('css/[name]-[hash].min.css'),
+    new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false,
@@ -57,3 +57,4 @@ module.exports = {
     require('autoprefixer')
   ]
 };
+
